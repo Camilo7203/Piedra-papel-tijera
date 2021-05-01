@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    color: azure;
+}
+.Header-container{
+    margin: 10px auto;  
+    width: 100%;
+    height: 60px;
+}
+.Header-container .Header-container--title{
+    font-size: 4rem;
+    text-align: center;
+}
+.main-container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.main-container .main-container--game{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+}
+.main-conteiner--title{
+    margin-bottom: 40px;
+}
+.main-conteiner--title h2{
+    font-size: 3rem;
+    color: azure;
+}
+.main-conteiner--title h3{
+    font-size: 3rem;
+    color: azure;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.game-options{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.main-container--game .game-option{
+    position: relative;
+    width: 100px;
+    height: 120px;
+    box-shadow: 10px 10px 21px -12px rgba(0,0,0,0.57);
+    background-color:#0093E9;
+    text-align: center;
+    line-height: 200px;
+}
+.main-container--game .game-option:hover{
+    background-color:#0074b8;
+    opacity: 1;
+}
+.main-container--game .game-option p{
+    height: 120px;
+}
+.main-container--game .game-option .rock{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("../Multimedia/rock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:10px;
+    left:14px;
+}
+
+.main-container--game .game-option .paper{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("../Multimedia/paper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:10px;
+    left:14px;
+}
+.main-container--game .game-option .scissors{
+    position:absolute;
+    width: 70px;
+    height: 70px;
+    background-image: url("../Multimedia/scissors.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:10px;
+    left:14px;
+}
+.main-container--score div h2{
+    font-size: 3rem;
+    color: azure;
+}
+.main-container--score .score-points{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+.score-points .points{
+    font-size: 6rem;
+}
+button{
+    width: 100px;
+    height: 30px;
+}

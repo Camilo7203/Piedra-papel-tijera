@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header class="Header-container">
+        <h1 class="Header-container--title">Rock, Paper and Scissors</h1>
+    </header>
+    <main class="main-container">
+        <section class="main-container--game">
+            <article class="main-conteiner--title">
+                <h2>Choice a option:</h2>
+                <h3 id="result"></h3>
+            </article>
+            <article class="game-options">
+                <div class="game-option" id="rock"><span class="rock"></span><p>Rock</p></div>
+                <div class="game-option" id="paper"><span class="paper" id="paper"></span><p>Paper</p></div>
+                <div class="game-option" id="scissors"><span class="scissors" ></span><p>Scissors</p></div>
+            </article>
+            
+            <article class="main-container--score">
+                <div>
+                    <h2>Score:</h2>
+                    <div class="score-points">
+                        <div class="points-player">
+                            <p>Player:</p>
+                            <p class="points" id="user-score">0</p>
+                        </div>
+                        <div class="points-CPU">
+                            <p>CPU:</p>
+                            <p class="points" id="cpu-score">0</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="restart">Reset</button>
+            </article>
+        </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
